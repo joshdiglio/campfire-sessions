@@ -684,6 +684,7 @@ About Us Page Above, Music Page Content Below
   }
 
   footer {
+    display: flex;
     flex-direction: row;
     align-items: center;
   }
@@ -695,12 +696,14 @@ About Us Page Above, Music Page Content Below
   }
 
   footer .copyright {
-    display: block; /* Make sure it's visible if needed */
-    max-width: 100%; /* Ensure it wraps within the container */
-    font-size: 12px;
+    display: block;
+    max-width: 100%; 
+    font-size: 8px;
+    margin-top: 10px; 
+    text-align: center;
   }
-
 }
+
 
 /* Medium screens (tablets, 600px to 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
