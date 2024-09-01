@@ -487,10 +487,6 @@ Home Page Content Above, About Us Page Content Below
   transition: transform 0.5s ease;
 }
 
-.our-logo-img:hover {
-  transform: scale(2.1); 
-}
-
 /*
 About Us Page Above, Music Page Content Below
 */
