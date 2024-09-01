@@ -1,0 +1,737 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #353471, #354284, #182b69);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1px 20px;
+  position: relative;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  height: auto;
+  border-bottom: 1px solid #111111;
+}
+
+.header-left-container {
+  display: flex;
+  align-items: center;
+  margin-left: -25px;
+  flex: 1;
+  min-width: 200px;
+}
+
+h1 {
+  position: relative;
+  display: inline-block;
+  text-align: flex-start;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2rem;
+  color: #F0F0F0;
+  text-shadow: 2px 2px 4px black;
+  margin-left: -15px; 
+  flex: 1;
+}
+
+.header-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-logo {
+  display: flex;
+  max-width: 65px;
+  max-height: 65px;  
+  margin: 0;
+  padding: 15px;
+}
+
+#menubtn {
+  font-size: 48px;
+  color: #F0F0F0;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+.dropdown {
+  position: relative;
+  flex: 0 1 auto;
+}
+
+.dropdown-content {
+  display: none; 
+  position: absolute;
+  background-color: #3d3d3d;
+  border-radius: 5px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  top: 40px; 
+  right: 0; 
+  z-index: 1; 
+}
+
+.dropdown-content a {
+  color: #F0F0F0;
+  font-family: "Bebas Neue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color:   #9DA0A3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.index-wrapper-1 {
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start; 
+  flex-wrap: wrap; 
+}
+
+.latest-episode-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  min-height: 350px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.latest-episode-spotify-player {
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.spotlight-episode-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  min-height: 350px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.spotlight-episode-spotify-player {
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.listen-now-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  min-height: 350px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.listen-now-button-container {
+  display: flex;
+  gap: 55px;
+}
+
+.listen-now-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.listen-now-button:hover {
+  transform: scale(1.1);
+}
+
+.index-wrapper-2 {
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start; 
+  flex-wrap: nowrap; 
+  flex-grow: 1;
+}
+
+.album-of-the-week-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  min-height: 700px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.album-of-the-week-cover-image {
+  width: 100%;
+  max-width: 350px;
+  display: block; 
+  margin: 20px 0; 
+  padding-bottom: 20px;
+}
+
+.artist-album-name {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  font-size: 25px;
+  color: #F0F0F0;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center; 
+}
+
+.instagram-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  min-height: 700px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.tiktok-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  min-height: 700px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  font-size: 20px;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  border-top: 1px solid #111111;
+  height: auto;
+  width: auto;
+}
+
+footer img {
+  max-width: 50px;
+  max-height: 50px;
+  flex: 1;
+  border: none;
+  vertical-align: none;
+  transition: opacity 0.3s ease;
+  margin: 0 10px;
+}
+
+footer img:hover {
+  opacity: 0.3;
+}
+
+footer .copyright {
+  margin: 0;
+flex: 1;
+text-align: right;
+  right: 20px;
+  font-size: 14px;
+  color: #F0F0F0;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+}
+
+.about-us-heading, 
+.hosts-heading, 
+.our-logo-heading, 
+.weekly-album-heading, 
+.king-of-the-hill-heading, 
+.past-albums-heading, 
+.latest-episode-heading,
+.spotlight-episode-heading,
+.listen-now-heading,
+.album-of-the-week-heading,
+.instagram-heading, 
+.tiktok-heading,
+.global-reach-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 60px;
+  color: #D0B0E2;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+.about-us-description,
+.hosts-description,
+.our-logo-description, 
+.weekly-album-description,
+.global-reach-description {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  font-size: 25px;
+  color: #F0F0F0;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;  
+}
+
+/*
+Home Page Content Above, About Us Page Content Below
+*/
+
+.about-us-wrapper-1 {
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start; 
+  flex-wrap: nowrap; 
+  flex-grow: 1;
+}
+
+.about-us-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  min-height: 650px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.hosts-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  min-height: 300px;
+  margin-bottom: 5px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  
+}
+
+.global-reach-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 550px;
+  min-height: 300px;
+  height: auto;
+  margin-bottom: 5px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  overflow: hidden;
+}
+
+.our-logo-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  min-height: 650px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.our-logo-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  margin: 0; 
+  transition: transform 0.5s ease;
+}
+
+.our-logo-img:hover {
+  transform: scale(2.1); 
+}
+
+/*
+About Us Page Above, Music Page Content Below
+*/
+
+.music-wrapper-1 {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  padding: 20px; 
+  gap: 20px; 
+}
+
+.weekly-album-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 825px;
+  min-height: 700px;
+  height: auto;
+  margin: 50px auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.king-of-the-hill-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 825px;
+  min-height: 700px;
+  height: auto;
+  margin: 50px auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.king-of-the-hill-cover {
+  width: 100%;
+  max-width: 350px;
+  display: block; 
+  margin: 20px 0; 
+  padding-bottom: 20px;
+}
+
+.king-of-the-hill-subtitle {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+    font-size: 27px;
+    color: #F0F0F0;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.king-of-the-hill-score {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  font-size: 27px;
+  color: #F0F0F0;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center; 
+}
+
+.past-albums-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #111111;
+  width: 100%;
+  max-width: 1650px;
+  height: auto;
+  min-height: 800px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.past-album-items {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 50px; 
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.past-album-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 200px; 
+}
+
+.previous-image {
+  width: 100%;
+  max-width: 500px; 
+  height: auto;
+}
+
+.previous-title,
+.previous-score {
+  margin-top: 5px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: #F0F0F0;
+  text-align: center;
+}
+
+/* Media Queries */
+
+/* Small screens (phones, 600px and down) */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .header-left-container,
+  .header-logo-container {
+    margin-left: 0;
+    flex: none;
+    text-align: center;
+  }
+
+  .main-logo {
+    max-width: 50px;
+    max-height: 50px;
+    padding: 10px;
+  }
+
+  #menubtn {
+    font-size: 36px;
+  }
+
+  .index-wrapper-1,
+  .index-wrapper-2,
+  .about-us-wrapper-1,
+  .music-wrapper-1 {
+    flex-direction: column;
+  }
+
+  .latest-episode-container,
+  .spotlight-episode-container,
+  .listen-now-container,
+  .album-of-the-week-container,
+  .instagram-container,
+  .tiktok-container,
+  .about-us-container,
+  .hosts-container,
+  .global-reach-container,
+  .our-logo-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .past-albums-container {
+    max-width: 100%;
+  }
+
+  .past-album-item {
+    width: 150px;
+  }
+
+  .listen-now-button-container {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  footer img {
+    max-width: 40px;
+    max-height: 40px;
+    margin: 5px;
+  }
+
+  footer .copyright {
+    display: block; /* Make sure it's visible if needed */
+    max-width: 100%; /* Ensure it wraps within the container */
+    font-size: 12px;
+  }
+
+}
+
+/* Medium screens (tablets, 600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .index-wrapper-1,
+  .index-wrapper-2,
+  .about-us-wrapper-1,
+  .music-wrapper-1 {
+    flex-direction: column;
+  }
+
+  .latest-episode-container,
+  .spotlight-episode-container,
+  .listen-now-container,
+  .album-of-the-week-container,
+  .instagram-container,
+  .tiktok-container,
+  .about-us-container,
+  .hosts-container,
+  .global-reach-container,
+  .our-logo-container {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .past-albums-container {
+    max-width: 100%;
+  }
+}
