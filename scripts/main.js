@@ -61,6 +61,27 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     observer.observe(document.querySelector('.past-album-items'), { childList: true });
   });
+
+  document.getElementById('menubtn').addEventListener('click', function() {
+    const dropdownContent = document.querySelector('.dropdown-content');
+    
+    // Toggle the display property between 'none' and 'block'
+    if (dropdownContent.style.display === 'block') {
+      dropdownContent.style.display = 'none';
+    } else {
+      dropdownContent.style.display = 'block';
+    }
+  });
+  
+  // Optional: Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('#menubtn')) {
+      const dropdownContent = document.querySelector('.dropdown-content');
+      if (dropdownContent.style.display === 'block') {
+        dropdownContent.style.display = 'none';
+      }
+    }
+  };
   
   
   // Get the current year
