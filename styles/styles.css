@@ -623,9 +623,13 @@ About Us Page Above, Music Page Content Below
 /* Small screens (phones, 600px and down) */
 @media (max-width: 600px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
     padding: 10px;
+  }
+
+  h1 {
+    font-size: 30px;
   }
 
   .header-left-container,
@@ -643,6 +647,39 @@ About Us Page Above, Music Page Content Below
 
   #menubtn {
     font-size: 36px;
+  }
+  .dropdown-content a {
+    font-size: 20px;
+
+    color: #F0F0F0;
+    font-family: "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+
+    border-radius: 5px;
+    padding: 8px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+.dropdown-content {
+min-width: 120px;
+}
+
+  .listen-now-button-container {
+    gap: 30px;
+  }
+
+  .listen-now-button {
+    width: 100px; 
+    height: 100px;
+  }
+
+  .listen-now-container {
+    padding: 5px;
+    margin: 20px auto;
   }
 
   .index-wrapper-1,
@@ -675,10 +712,6 @@ About Us Page Above, Music Page Content Below
     width: 150px;
   }
 
-  .listen-now-button-container {
-    flex-direction: column;
-  }
-
   footer {
     display: flex;
     flex-direction: row;
@@ -694,9 +727,10 @@ About Us Page Above, Music Page Content Below
   footer .copyright {
     display: block;
     max-width: 100%; 
-    font-size: 8px;
+    font-size: 6px;
     margin-top: 10px; 
     text-align: center;
+
   }
 }
 
@@ -728,3 +762,4 @@ About Us Page Above, Music Page Content Below
     max-width: 100%;
   }
 }
+
