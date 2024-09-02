@@ -277,6 +277,7 @@ cursor: pointer;
   padding: 10px;
 }
 
+
 .tiktok-container {
   display: flex;
   flex: 1;
@@ -681,15 +682,15 @@ min-width: 120px;
   .hosts-container,
   .global-reach-container,
   .our-logo-container, 
-  .past-albums-container {
-    width: 90%;
-    max-width: 100%;
+  .past-albums-container, 
+  .weekly-album-container,
+  .king-of-the-hill-container {
+    width: 100%;
+    max-width: 90%;
     margin: 20px auto;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-
-
+  } 
 
   .about-us-heading, 
 .hosts-heading, 
@@ -716,7 +717,7 @@ min-width: 120px;
 }
 
   .past-album-item {
-    width: 120px;
+    width: 130px;
   }
   footer {
     display: flex;
