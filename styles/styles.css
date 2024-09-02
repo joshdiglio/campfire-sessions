@@ -698,8 +698,13 @@ min-width: 120px;
   .about-us-container,
   .hosts-container,
   .global-reach-container,
-  .our-logo-container {
-    width: 100%;
+  .our-logo-container,
+  .album-of-the-week-container,
+  .king-of-the-hill-container,
+  .past-albums-container,
+  .weekly-album-container
+  {
+    width: 90%;
     max-width: 100%;
     margin: 20px auto;
   }
@@ -709,7 +714,7 @@ min-width: 120px;
   }
 
   .past-album-item {
-    width: 150px;
+    width: 120px;
   }
 
   footer {
