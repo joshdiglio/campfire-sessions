@@ -498,7 +498,6 @@ About Us Page Above, Music Page Content Below
   padding: 20px; 
   gap: 20px; 
 }
-
 .weekly-album-container {
   display: flex;
   flex: 1;
@@ -517,7 +516,6 @@ About Us Page Above, Music Page Content Below
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
 }
-
 .king-of-the-hill-container {
   display: flex;
   flex: 1;
@@ -536,7 +534,6 @@ About Us Page Above, Music Page Content Below
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
 }
-
 .king-of-the-hill-cover {
   width: 100%;
   max-width: 350px;
@@ -544,7 +541,6 @@ About Us Page Above, Music Page Content Below
   margin: 20px 0; 
   padding-bottom: 20px;
 }
-
 .king-of-the-hill-subtitle {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
@@ -556,7 +552,6 @@ About Us Page Above, Music Page Content Below
     margin-bottom: 10px;
     text-align: center; 
 }
-
 .king-of-the-hill-score {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
@@ -568,7 +563,6 @@ About Us Page Above, Music Page Content Below
   margin-bottom: 10px;
   text-align: center; 
 }
-
 .past-albums-container {
   display: flex;
   flex: 1;
@@ -587,7 +581,6 @@ About Us Page Above, Music Page Content Below
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
 }
-
 .past-album-items {
   display: flex;
   flex-wrap: wrap; 
@@ -595,20 +588,17 @@ About Us Page Above, Music Page Content Below
   justify-content: center;
   padding-top: 10px;
 }
-
 .past-album-item {
   display: flex;
   flex-direction: column; 
   align-items: center;
   width: 200px; 
 }
-
 .previous-image {
   width: 100%;
   max-width: 500px; 
   height: auto;
 }
-
 .previous-title,
 .previous-score {
   margin-top: 5px;
@@ -617,9 +607,7 @@ About Us Page Above, Music Page Content Below
   color: #F0F0F0;
   text-align: center;
 }
-
 /* Media Queries */
-
 /* Small screens (phones, 600px and down) */
 @media (max-width: 600px) {
   header {
@@ -627,36 +615,30 @@ About Us Page Above, Music Page Content Below
     height: auto;
     padding: 10px;
   }
-
   h1 {
     font-size: 30px;
   }
-
   .header-left-container,
   .header-logo-container {
     margin-left: 0;
     flex: none;
     text-align: center;
   }
-
   .main-logo {
     max-width: 50px;
     max-height: 50px;
     padding: 10px;
   }
-
   #menubtn {
     font-size: 36px;
   }
   .dropdown-content a {
     font-size: 20px;
-
     color: #F0F0F0;
     font-family: "Bebas Neue", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500px;
     font-style: normal;
-
     border-radius: 5px;
     padding: 8px 5px;
     text-decoration: none;
@@ -667,12 +649,13 @@ About Us Page Above, Music Page Content Below
 .dropdown-content {
 min-width: 120px;
 }
-
   .listen-now-button-container {
     gap: 30px;
   }
 
   .listen-now-button {
+    width: 100px; 
+    height: 100px;
     width: 75px; 
     height: 75px;
   }
@@ -681,19 +664,86 @@ min-width: 120px;
     padding: 5px;
     margin: 20px auto;
   }
-
   .index-wrapper-1,
   .index-wrapper-2,
   .about-us-wrapper-1,
-  .music-wrapper-1
-  .container-group-hosts {
+  .music-wrapper-1 {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .latest-episode-container,
+  .spotlight-episode-container,
+  .listen-now-container,
+  .album-of-the-week-container,
+  .instagram-container,
+  .tiktok-container,
+  .about-us-container,
+  .hosts-container,
+  .global-reach-container,
+  .our-logo-container, 
+  .past-albums-container {
+    width: 90%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+
+
+  .about-us-heading, 
+.hosts-heading, 
+.our-logo-heading, 
+.weekly-album-heading, 
+.king-of-the-hill-heading, 
+.past-albums-heading, 
+.latest-episode-heading,
+.spotlight-episode-heading,
+.listen-now-heading,
+.album-of-the-week-heading,
+.instagram-heading, 
+.tiktok-heading,
+.global-reach-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 50px;
+  color: #D0B0E2;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+  .past-album-item {
+    width: 120px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  footer img {
+    max-width: 40px;
+    max-height: 40px;
+    margin: 5px;
+  }
+  footer .copyright {
+    display: block;
+    max-width: 100%; 
+    font-size: 6px;
+    margin-top: 10px; 
+    text-align: center;
+  }
+}
+/* Medium screens (tablets, 600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .index-wrapper-1,
+  .index-wrapper-2,
+  .about-us-wrapper-1,
+  .music-wrapper-1 {
     flex-direction: column;
   }
-
-  .container-group-hosts {
-    margin: 20px auto;
-  }
-
   .latest-episode-container,
   .spotlight-episode-container,
   .listen-now-container,
@@ -704,110 +754,11 @@ min-width: 120px;
   .hosts-container,
   .global-reach-container,
   .our-logo-container,
-  .album-of-the-week-container,
-  .king-of-the-hill-container,
-  .past-albums-container,
-  .weekly-album-container
-  {
-    width: 400px; /* Set a fixed width for consistency */
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 0 15px; /* Optional: Adjust padding if necessary */
-    box-sizing: border-box; 
-  }
-
-  .about-us-heading, 
-  .hosts-heading, 
-  .our-logo-heading, 
-  .weekly-album-heading, 
-  .king-of-the-hill-heading, 
-  .past-albums-heading, 
-  .latest-episode-heading,
-  .spotlight-episode-heading,
-  .listen-now-heading,
-  .album-of-the-week-heading,
-  .instagram-heading, 
-  .tiktok-heading,
-  .global-reach-heading {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 50px;
-    color: #D0B0E2;
-    margin: 0;
-    margin-bottom: 20px;
-    text-align: center;
-    text-shadow: 2px 2px 4px black;
-  }
-
-  .about-us-description,
-.hosts-description,
-.our-logo-description, 
-.weekly-album-description,
-.global-reach-description {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500px;
-  font-style: normal;
-  font-size: 25px;
-  color: #F0F0F0;
-  margin: 0;
-  margin-bottom: 25px;
-  text-align: center;  
-}
-
-  .past-album-item {
-    width: 120px;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  footer img {
-    max-width: 40px;
-    max-height: 40px;
-    margin: 5px;
-  }
-
-  footer .copyright {
-    display: block;
-    max-width: 100%; 
-    font-size: 6px;
-    margin-top: 10px; 
-    text-align: center;
-
-  }
-}
-
-
-/* Medium screens (tablets, 600px to 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-  .index-wrapper-1,
-  .index-wrapper-2,
-  .about-us-wrapper-1,
-  .music-wrapper-1 {
-    flex-direction: column;
-  }
-
-  .latest-episode-container,
-  .spotlight-episode-container,
-  .listen-now-container,
-  .album-of-the-week-container,
-  .instagram-container,
-  .tiktok-container,
-  .about-us-container,
-  .hosts-container,
-  .global-reach-container,
-  .our-logo-container {
+  .weekly-album-container {
     width: 90%;
     max-width: 100%;
   }
-
   .past-albums-container {
     max-width: 100%;
   }
 }
-
