@@ -763,10 +763,3 @@ min-width: 120px;
     max-width: 100%;
   }
 }
-
-.instagram-container {
-  max-width: 100%;
-  padding: 10px;
-  overflow: hidden;
-  box-sizing: border-box; 
-}
