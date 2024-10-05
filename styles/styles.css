@@ -770,9 +770,3 @@ min-width: 120px;
   overflow: hidden;
   box-sizing: border-box; 
 }
-
-.instagram-media {
-  width: 100% !important;
-  height: auto !important;
-  max-width: 100%;
-}
